@@ -1,0 +1,76 @@
+*{
+    margin: 0;  
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    background-color: #E4D9FF;
+    justify-content: space-around;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+.links a{
+    margin-left: 1vw;
+}
+
+.icon{
+    background: url(../images/sprite3.png) no-repeat;
+    width: 66px;
+    height: 66px;
+    display: inline-block;
+}
+
+#soundcloud{
+    background-position: -587px -72px;
+}
+
+#fb{
+    background-position: -439px -146px;
+}
+
+#skype{
+    background-position: -365px -147px;
+}
+
+#twitter{
+    background-position: -66px -72px;
+}
+
+@media screen and (max-width: 600px){
+    nav{
+        position: relative;
+        background-color: #141427;
+    }
+    .pagetitle{
+        background-color: #9f9ff1;
+        padding: 1vw;
+    }
+    .links{
+        display: none;
+        z-index: 1;
+        position:absolute;
+        background-color: rgb(102, 157, 206);
+        min-width: 100vw;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+    .links a{
+        color: rgb(231, 137, 137);
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        display: block;
+    }
+    .links a:hover{background-color: #ddd;}
+    nav:hover .links{display: block;}
+    nav:hover .pagetitle{background-color: aqua;}
+}
